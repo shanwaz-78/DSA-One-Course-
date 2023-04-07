@@ -4,7 +4,7 @@
 #### Q.1. __Find I = 5 Of Given Numbers.__
         8 7 6 5 4 3 2 1 0 (Indexes)
 (i.) => 1 0 0 1 1 0 1 0 1.
-* First make it's mask,let's say we have to find i = 5 then letf shift(<<) the values but make sure you'll start from (left to right) till the index 5;
+* First make it's mask,let's say we have to find i = 5 then letf shift(<<) the values but make sure you'll start from (Right to Left) till the index 5;
 ---
 * 1 0 0 1 1 0 1 0 1.
 * 0 0 0 1 0 0 0 0 0  <= __Made Mask__ 
@@ -27,9 +27,9 @@ Note => Here it is hurreyy we set the value 1 of the index 3 you can see the que
 Note => hurreyy We again got our answer we clear the value from 1 to 0 of index 4;
 
 #### Q.4. Find the number of bits to change to convert a to b.
-a. 1 0 1 1 0.
-b. 1 1 0 1 1.
-ans.  0 1 1 0 1. <= __Apply ^(XOR) Operator__
+* a. 1 0 1 1 0.
+* b. 1 1 0 1 1.
+* ans.  0 1 1 0 1. <= __Apply ^(XOR) Operator__
 
 Note => Now count how many 1 in our ans in this case is 3 that means we have to change 3 bits to convert to a to b;
 
