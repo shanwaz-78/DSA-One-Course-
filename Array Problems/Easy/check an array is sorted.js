@@ -6,5 +6,6 @@ function isSorted(arr) {
   }
   return true;
 }
+
 isSorted([1, 2, 3, 4]); // -> true
 isSorted([4, 3, 2, 1]); // -> false
