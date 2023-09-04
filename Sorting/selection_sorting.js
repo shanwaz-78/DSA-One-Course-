@@ -1,6 +1,4 @@
-const unsort_arr = [2, 4, 3, 5, 6, 1];
-
-function seletion_sort() {
+function seletion_sort(unsortArr) {
   for (let i = 0; i < unsort_arr.length; i++) {
     let min = i;
     for (let j = i + 1; j < unsort_arr.length; j++) {
@@ -13,6 +11,4 @@ function seletion_sort() {
     unsort_arr[i] = tmp;
   }
 }
-seletion_sort();
-
-console.log(unsort_arr);
+seletion_sort([2, 4, 3, 5, 6, 1]);
