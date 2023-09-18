@@ -2,11 +2,12 @@ function isNumPresent(arr, num) {
   if (!Array.isArray(arr)) {
     return [];
   }
-  for (const i in arr) {
-    if (arr[i] === num) {
-      return i;
+  for (const index in arr) {
+    if (arr[index] === num) {
+      return index;
     }
   }
   return -1;
 }
-isNumPresent([1, 2, 3], 3); // -> 2
+console.log(isNumPresent([1, 2, 3], 3)); // -> 2
+

@@ -1,18 +1,19 @@
 function sortElem(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let min = i;
-    for (let j = i + 1; j < arr.length; j++) {
-      if (arr[j] < arr[min]) {
-        min = j;
+  let flag = true;
+  while (flag) {
+    flag = false;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > arr[i + 1]) {
+        const temp = arr[i + 1];
+        arr[i + 1] = arr[i];
+        arr[i] = temp;
+        flag = true;
       }
     }
-    const temp = arr[min];
-    arr[min] = arr[i];
-    arr[i] = temp;
   }
+  const secondSmallest = arr[1];
+  const seconLargest = arr[arr.length - 2];
+  return [secondSmallest, seconLargest];
 }
-sortElem([7, 5, 4, 2, 6, 1]);
-const secondSmallest = arr[1];
-const secondLargest = arr[arr.length - 2];
-console.log(secondLargest); // -> 6
-console.log(secondSmallest); // -> 2
+console.log(sortElem([7, 5, 4, 2, 6, 1])); // [2,6];
+

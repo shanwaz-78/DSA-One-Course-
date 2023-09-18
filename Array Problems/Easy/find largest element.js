@@ -1,10 +1,11 @@
 function findLargestElem(arr) {
-  let largest = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      largest = arr[i];
-    };
-  };
+  let largest = -Infinity;
+  for (const key of arr) {
+    if (key > largest) {
+      largest = key;
+    }
+  }
   return largest;
 }
 console.log(findLargestElem([2, 5, 3, 6, 1])); // -> 6;
+
